@@ -1,0 +1,111 @@
+
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+
+    #menu {
+        background:#49211b;
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        right: 10px;
+        border-radius: 5px;
+        width: 160px;
+        border:1px solid rgba(0, 0, 0, 0.25);
+        font-family: 'Space Grotesk', sans-serif;
+    }
+
+    #menu a {
+        font-size: 16px;
+        color: #fdf9f1;
+        font-weight: 800;
+        display: block;
+        margin: 0;
+        padding: 15px;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    }
+
+    #menu a:last-child {
+        border: none;
+    }
+
+    #menu a:hover {
+        background-color: #7b6764;
+        color: #000;
+    }
+
+    #menu a.active {
+        background-color: #78362c;
+        color: #fdf9f1;
+    }
+
+    #menu a.active:hover {
+        background: #7b6764;
+        color: #000;
+    }
+
+#title {
+  position: absolute;
+  width: 240px;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: transparent;
+}
+
+h1{
+  font-size: 15px;
+  font-weight: 800;
+  font-family:'Space Grotesk', sans-serif;
+  text-align:center;
+  line-height:15px;;
+}
+
+h2{
+  font-size: 47px;
+  font-weight: 800;
+  color:#fdf9f1;
+  font-family:'Space Grotesk', sans-serif;
+  text-align:left;
+  line-height:39px;
+  -webkit-text-stroke: 2px #49211b;
+  text-shadow: 0 0 black, 0 2px black, 3px 0 black, 0 2px black;
+
+}
+
+p {
+  font-size: 12px;
+  font-family: 'Overpass', sans-serif;
+  line-height:13px;
+}
+
+#legend{
+  position:absolute;
+  bottom:0;
+  right:0;
+  z-index:1000;
+  margin-bottom:30px;
+  margin-right:10px;
+  width:240px;
+  font-family:'Space Grotesk', sans-serif;
+  text-align:center;
+  color:#49211b;
+  font-weight:600;
+  font-size:13px;
+}
+.legend-key span{}
+
+.my-popup .mapboxgl-popup-content {
+  background: rgba(246, 228, 221, 0.92);
+  padding-top:3px;
+  padding-bottom:3px;
+  color: #49211b;
+  text-align: center;
+  display:block;
+  line-height:8px;
+}
+
+.mapboxgl-ctrl-geocoder {
+width: 260px !important;
+}
+
+
